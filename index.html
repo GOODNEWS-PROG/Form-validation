@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="registrationForm">
+      <div class="container">
+        <div class="input">
+          <div>
+            <label for="">Enter Your Username</label><br />
+            <input
+              class="inp"
+              type="text"
+              name=""
+              placeholder="Enter Your Username"
+              id="Username"
+            /><br />
+            <p id="errormsg">Please enter a Username</p>
+          </div>
+          
+          <div>
+            <label for="">Enter Your Email</label><br />
+            <input
+            class="inp"
+            type="email"
+            name=""
+            placeholder="Enter Your Email"
+            id="email"
+            /><br />
+            <p id="errormsgg">Please enter a valid email</p>
+          </div>
+          <div>
+            <label for="">Enter Your Password</label><br />
+            <input
+              class="inp"
+              type="text"
+              name=""
+              placeholder="Enter Your Password"
+              id="pass1"
+            /><br />
+            <p id="error">Please input a valid password</p>
+          </div>
+
+          <div>
+            <label for="">Confirm Password</label><br />
+            <input
+              class="inp"
+              type="text"
+              name=""
+              placeholder="Confirm Password"
+              id="pass2"
+            />
+            <p id="errormsag">This doesn't match with the current Password</p>
+            <span id="success"></span>
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
